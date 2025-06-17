@@ -21,9 +21,88 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero-sec {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-sec__image,
+  .hero-sec__text {
+    flex: 1 1 100%;
+  }
+}
 .header__title {
   animation: heartbeat 2s infinite;
   color: var(--color-blanco);
+  font-family: var(--fuente-principal);
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__icon {
+  color: var(--color-blanco);
+  font-size: 1.6em;
+  animation: saltarHoja 5s ease-in-out infinite;
+}
+@keyframes slideInLeftFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRightFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+}
+
+/* Animación para la hoja que flota */
+@keyframes saltarHoja {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes flotarAjolote {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Media Queries */

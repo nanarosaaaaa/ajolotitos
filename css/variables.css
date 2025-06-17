@@ -1,7 +1,8 @@
 :root {
-  --color-rosa: #f8b7d8;
+  --color-rosa: #ff4a86;
   --color-rosa-claro: #ffe8f3;
-  --color-negro: #1f1f1f;
+  --color-rosa-oscuro: #721534; 
+  --color-negro: #1b0e15;
   --color-blanco: #ffffff;
   --fuente-principal: 'Quicksand', sans-serif;
   --size-titulo: 2.5rem;
