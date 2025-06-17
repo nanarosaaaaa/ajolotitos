@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.header__title {
+  animation: heartbeat 2s infinite;
+  color: var(--color-blanco);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .catalogo__grid {
+    grid-template-columns: 1fr;
+  }
+}

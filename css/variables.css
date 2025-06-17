@@ -1,0 +1,12 @@
+:root {
+  --color-rosa: #f8b7d8;
+  --color-rosa-claro: #ffe8f3;
+  --color-negro: #1f1f1f;
+  --color-blanco: #ffffff;
+  --fuente-principal: 'Quicksand', sans-serif;
+  --size-titulo: 2.5rem;
+  --size-subtitulo: 1.75rem;
+  --size-texto: 1rem;
+  --sombra: 0 4px 10px rgba(0, 0, 0, 0.15);
+  --borde-rad: 1rem;
+}
