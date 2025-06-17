@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script defer src="js/scrollReveal.js"></script>
+    <script src="js/scrollReveal.js"></script>
     <script src="https://kit.fontawesome.com/a2e45d15f2.js" crossorigin="anonymous"></script>
   </head>
+
    <body>
+
     <header class="header">
       <div class="header__container">
         <h1 class="header__title">Axolove</h1>
@@ -26,7 +28,9 @@
         </nav>
       </div>
     </header>
+
 <main>
+
       <section class="hero reveal" id="sobre">
         <figure class="hero__image">
           <img src="" alt="Ajolote rosado nadando" title="Ajolote feliz" />
@@ -81,8 +85,26 @@
         </div>
       </section>
 
-</head>
-<body>
-    
-</body>
+<section class="contacto reveal" id="contacto">
+        <h2 class="contacto__title">Contáctanos o suscríbete</h2>
+        <form class="formulario" aria-label="Formulario de contacto">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit" class="formulario__btn">Enviar</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 Axolove - Cruz Serrato Nataly <i class="fas fa-heart"></i> para los ajolotes.</p>
+    </footer>
+  </body>
 </html>
